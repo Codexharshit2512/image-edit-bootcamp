@@ -1,0 +1,27 @@
+.task_submissions_page_container {
+  margin-top: 2rem;
+  .submissions_heading {
+    font-family: "Texturina";
+    font-size: 35px;
+    font-weight: 500;
+  }
+
+  .submissions_container {
+    margin-top: 2rem;
+  }
+
+  .MuiCardContent-root {
+    background-color: #b6b6b6;
+    color: white;
+  }
+
+  .MuiCardActions-root {
+    background-color: #b6b6b6;
+    color: white !important;
+  }
+}
+
+.graded {
+  background: #4bb543 !important;
+  color: white !important;
+}

@@ -1,0 +1,46 @@
+.submission_modal_content {
+  color: white;
+  .modal_header {
+    display: flex;
+    h2 {
+      color: white;
+      margin-left: 6px;
+    }
+    .close_icon {
+      margin-left: auto;
+      transform: translateY(5px);
+    }
+    padding-bottom: 9px;
+    border-bottom: 1px solid grey;
+  }
+
+  .submission_img {
+    margin-top: 10px;
+    img {
+      height: 200px;
+      width: 400px;
+      @media (max-width: 500px) {
+        width: 300px;
+      }
+    }
+  }
+  .student_name,
+  .submission_date {
+    margin-top: 12px;
+  }
+  .grade_input {
+    margin-top: 1rem;
+    .MuiInput-root {
+      width: 50%;
+    }
+  }
+
+  .grade_submit {
+    margin-top: 1.3rem;
+  }
+
+  @media (max-width: 500px) {
+    width: 90vw;
+    padding: 10px;
+  }
+}

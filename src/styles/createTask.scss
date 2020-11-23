@@ -1,0 +1,99 @@
+.create_task_container {
+  margin-top: 2rem;
+  padding: 0 20%;
+
+  @media (max-width: 950px) {
+    padding: 0 10%;
+  }
+
+  @media (max-width: 770px) {
+    padding: 0 5%;
+  }
+
+  @media (max-width: 700px) {
+    padding: 1rem;
+  }
+
+  .create_task_heading {
+    font-family: "Texturina";
+  }
+}
+
+.create_task_form_container {
+  .form_group {
+    margin-top: 2rem;
+    position: relative;
+    .required_error {
+      font-size: 19px;
+    }
+  }
+
+  .details_input {
+    label {
+      display: block;
+      font-size: 18px;
+    }
+
+    textarea {
+      margin-top: 7px;
+      resize: none;
+      font-size: 18px;
+      font-weight: 400;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      @media (max-width: 700px) {
+        width: 80%;
+      }
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .MuiTextField-root {
+    width: 100%;
+
+    .MuiInput-root {
+      width: 80%;
+
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.image_file {
+  display: flex;
+  @media (max-width: 550px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.task_create_image_container {
+  flex: 2;
+  @media (max-width: 550px) {
+    margin-top: 2rem;
+  }
+  .selected_image_container {
+    display: flex;
+    margin-left: 1rem;
+    padding: 8px 10px;
+    border: 2px solid blue;
+    border-radius: 4px;
+    justify-content: space-between;
+    @media (max-width: 550px) {
+      margin-left: 0;
+    }
+    .selected_img_name {
+      img {
+        width: 140px;
+        height: 120px;
+      }
+    }
+    .cancel_button {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

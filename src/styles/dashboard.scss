@@ -1,0 +1,24 @@
+.dashboard_container {
+  margin-top: 2rem;
+  .dashboard_heading {
+    font-family: "Texturina";
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+
+  .MuiCardContent-root {
+    background-color: #b6b6b6;
+    color: white;
+  }
+
+  .MuiCardActions-root {
+    background-color: #b6b6b6;
+    color: white !important;
+  }
+}
+
+.turned_in {
+  background: #4bb543 !important;
+  color: white !important;
+}

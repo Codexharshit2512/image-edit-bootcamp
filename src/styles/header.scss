@@ -1,0 +1,123 @@
+.header_container {
+  text-align: center;
+  position: relative;
+  padding: 1rem 2rem;
+  background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    rgba(59, 149, 237, 1) 0%,
+    rgba(7, 91, 173, 1) 90%
+  );
+  box-shadow: 1px 1px 3px black;
+  .nav_ham_icon {
+    position: absolute;
+    left: 10%;
+    top: 29%;
+    @media (max-width: 500px) {
+      left: 5%;
+      top: 31%;
+    }
+    .MuiSvgIcon-root {
+      font-size: 29px;
+      @media (max-width: 500px) {
+        font-size: 27px;
+      }
+      cursor: pointer;
+    }
+  }
+
+  .app_title {
+    h2 {
+      color: white;
+      font-family: "Texturina";
+    }
+  }
+}
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba($color: #000000, $alpha: 0.5);
+  z-index: 100;
+  .navbar_container {
+    position: fixed;
+    animation: appear 300ms forwards;
+    top: 0;
+    bottom: 0;
+    padding: 12px;
+    width: 300px;
+    box-shadow: 1px 1px 6px;
+    background-color: white;
+    z-index: 200;
+    @media (max-width: 500px) {
+      width: 200px;
+    }
+    .logout_icon {
+      display: inline-block;
+      transform: translateY(5px);
+      padding-right: 10px;
+    }
+    .close_btn {
+      display: flex;
+      margin-bottom: 1.3rem;
+      margin-left: 4px;
+      .MuiSvgIcon-root {
+        font-size: 30px;
+        cursor: pointer;
+        @media (min-width: 490px) {
+          &:hover {
+            color: red;
+            transition: color 200ms;
+          }
+        }
+      }
+    }
+    .nav_link {
+      text-align: left;
+      font-weight: 500;
+      font-size: 18px;
+      margin-top: 12px;
+      padding: 10px 8px;
+      background-color: white;
+      cursor: pointer;
+
+      @media (min-width: 490px) {
+        &:hover {
+          background-color: #d5d5d5;
+          transition: background-color 200ms ease-in;
+        }
+      }
+    }
+  }
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-300px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.appear-enter {
+  opacity: 0;
+  transform: translateX(-300px);
+}
+.appear-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+  transition: opacity 300ms, transform 200ms;
+}
+.appear-exit {
+  opacity: 1;
+}
+.appear-exit-active {
+  opacity: 0;
+  transform: translate(-300px);
+  transition: opacity 300ms, transform 200ms;
+}
